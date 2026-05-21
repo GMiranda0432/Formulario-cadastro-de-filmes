@@ -8,6 +8,7 @@
     --font-main: 'Poppins', sans-serif;
     --transition: all 0.3s ease;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -34,12 +35,14 @@ a {
 ul {
     list-style: none;
 }
+
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2.5rem;
     position: relative;
 }
+
 .section-title::after {
     content: "";
     display: block;
@@ -49,6 +52,7 @@ ul {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -121,6 +125,7 @@ ul {
 .main-nav a:hover {
     color: var(--text-muted);
 }
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -150,18 +155,25 @@ ul {
 .hero-image img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
-.benefits, .about, .carousel-section, .testimonials, .contact-section {
+
+.benefits,
+.about,
+.carousel-section,
+.testimonials,
+.contact-section {
     padding: 80px 5%;
 }
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
-.card, .testimonial-card {
+.card,
+.testimonial-card {
     background-color: var(--bg-card);
     padding: 30px;
     border-radius: 8px;
@@ -169,9 +181,10 @@ ul {
     transition: var(--transition);
 }
 
-.card:hover, .testimonial-card:hover {
+.card:hover,
+.testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-icon {
@@ -193,6 +206,7 @@ ul {
     font-weight: 600;
     color: var(--primary-color);
 }
+
 .about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -206,11 +220,11 @@ ul {
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
+
 .carousel {
     width: 100%;
     overflow-x: auto;
     padding-bottom: 20px;
-    /* Customização da barra de rolagem */
     scrollbar-width: thin;
     scrollbar-color: var(--primary-color) var(--bg-dark);
 }
@@ -240,6 +254,7 @@ ul {
 .carousel-track img:hover {
     transform: scale(1.05);
 }
+
 .form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -288,6 +303,7 @@ ul {
 .input-group input:not(:placeholder-shown):invalid {
     border-color: #dc3545;
 }
+
 footer {
     background-color: #000;
     padding: 40px 5% 20px;
@@ -329,21 +345,23 @@ footer {
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
 @media (max-width: 992px) {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
         padding-top: 40px;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .hero-image img {
         max-width: 80%;
     }
 }
+
 @media (max-width: 768px) {
     .main-header {
         flex-direction: column;
